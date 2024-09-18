@@ -9,15 +9,15 @@ const MONGODB_URl = process.env.MONGODB_URl;
 const FRONTEND_URL = process.env.FRONTEND_URL;
 
 const User = require("./models/user&noteModel.js");
-
-app.use(express.json());
 app.use(
   cors({
-    origin: FRONTEND_URL,
+    origin: { FRONTEND_URL },
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
+app.use(express.json());
+
 //app.use(cors());
 
 mongoose
