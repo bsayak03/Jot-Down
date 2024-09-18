@@ -10,7 +10,13 @@ const MONGODB_URl = process.env.MONGODB_URl;
 const User = require("./models/user&noteModel.js");
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://jot-down-tswx.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 mongoose
   .connect(MONGODB_URl)
