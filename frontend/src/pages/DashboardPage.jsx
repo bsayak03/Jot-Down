@@ -40,9 +40,7 @@ export default function Dashboard() {
   const fetchNotes = async () => {
     const userId = user.email.split("@")[0];
 
-    const res = await axios.get(
-      `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/notes/${userId}`
-    );
+    const res = await axios.get(`api/notes/${userId}`);
 
     setNotes(res.data.notes);
     setFilteredNotes(res.data.notes);
@@ -59,13 +57,10 @@ export default function Dashboard() {
   const handleCreateNote = async (e) => {
     e.preventDefault();
     const userId = user.email.split("@")[0];
-    await axios.post(
-      `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/note/${userId}`,
-      {
-        title,
-        description,
-      }
-    );
+    await axios.post(`api/note/${userId}`, {
+      title,
+      description,
+    });
     setTitle("");
     setDescription("");
     setIsCreating(false);
@@ -74,15 +69,10 @@ export default function Dashboard() {
 
   const handleUpdateNote = async (noteId) => {
     const userId = user.email.split("@")[0];
-    await axios.put(
-      `${
-        import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
-      }/note/${userId}/${noteId}`,
-      {
-        title: editableNote.title,
-        description: editableNote.description,
-      }
-    );
+    await axios.put(`api/note/${userId}/${noteId}`, {
+      title: editableNote.title,
+      description: editableNote.description,
+    });
     setEditingNoteId(null);
     setEditableNote({ title: "", description: "" });
     fetchNotes();
@@ -90,11 +80,7 @@ export default function Dashboard() {
 
   const handleDeleteNote = async (noteId) => {
     const userId = user.email.split("@")[0];
-    await axios.delete(
-      `${
-        import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
-      }/notes/${userId}/${noteId}`
-    );
+    await axios.delete(`api/notes/${userId}/${noteId}`);
     fetchNotes();
   };
 
