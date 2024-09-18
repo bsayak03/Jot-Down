@@ -4,7 +4,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 
 require("dotenv").config();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 const MONGODB_URl = process.env.MONGODB_URl;
 
 const User = require("./models/user&noteModel.js");
