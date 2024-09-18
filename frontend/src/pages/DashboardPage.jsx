@@ -106,20 +106,6 @@ export default function Dashboard() {
     }));
   };
 
-  const sampleNote = async () => {
-    const userId = user.email.split("@")[0];
-    await axios.post(
-      `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/note/${userId}`,
-      {
-        title: "A Sample Note",
-        description: "A Sample Description",
-      }
-    );
-    setEditingNoteId(null);
-    setEditableNote({ title: "", description: "" });
-    fetchNotes();
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
       <header className="container mx-auto px-4 py-6 flex justify-between items-center">
