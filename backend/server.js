@@ -21,18 +21,12 @@ app.use(express.json());
 
 //app.use(cors());
 
-mongoose
-  .connect(MONGODB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    serverSelectionTimeoutMS: 30000,
-  })
-  .then(() => {
-    console.log(`Connected to DB`);
-  })
-  .catch((err) => {
-    console.log(err.message);
-  });
+const connect = async () => {
+  await mongoose.connect(MONGODB_URL);
+  console.log(`Connected to DB`);
+};
+
+connect();
 
 // Create a note => using POST
 app.post("/note/:userId", async (req, res) => {
