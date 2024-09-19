@@ -240,6 +240,10 @@ export default function Home() {
               Made with <span className="text-red-500">🤍</span> by Sayak
               Bhattacharya
             </p>
+
+            <a className="mt-2 text-lg" href="https://github.com/bsayak03">
+              GitHub
+            </a>
           </div>
         </div>
       </footer>
