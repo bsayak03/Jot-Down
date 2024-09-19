@@ -2,6 +2,10 @@
 
 Jot Down is a modern, responsive web application for capturing and managing your thoughts, ideas, and to-do lists. With a sleek user interface and powerful features, Jot Down makes it easy to create, read, update, and delete notes from any device.
 
+## Live Demo
+
+Check out the live version of Jot Down: [https://jot-down-bsayak03.vercel.app/](https://jot-down-bsayak03.vercel.app/)
+
 ## Features
 
 - **Quick Notes**: Jot down your thoughts in seconds
@@ -10,6 +14,20 @@ Jot Down is a modern, responsive web application for capturing and managing your
 - **Responsive Design**: Access your notes on any device
 - **Secure Authentication**: User authentication powered by Auth0
 - **Real-time Syncing**: Your notes are saved and synced automatically
+
+## Screenshots
+
+[Add screenshots of your application here. For example:]
+
+<!-- ![Jot Down Homepage](path/to/homepage-screenshot.png) -->
+<!-- ![Jot Down Dashboard](path/to/dashboard-screenshot.png) -->
+<!-- ![Jot Down Note Creation](path/to/note-creation-screenshot.png) -->
+
+## Demo Video
+
+[Add a link to or embed a demo video of your application here. For example:]
+
+<!-- [![Jot Down Demo Video](path/to/video-thumbnail.png)](https://youtu.be/your-video-id) -->
 
 ## Technologies Used
 
@@ -36,13 +54,13 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/jot-down.git
-   cd jot-down
+   git clone https://github.com/bsayak03/Jot-Down.git
+   cd Jot-Down
    ```
 
 2. Install dependencies for both frontend and backend:
 
-   ````
+   ```
    # Install backend dependencies
    cd backend
    npm install
@@ -50,22 +68,25 @@ Before you begin, ensure you have met the following requirements:
    # Install frontend dependencies
    cd ../frontend
    npm install
-   ```     ```
-   ````
+   ```
 
 ## Running the Application
 
 1. Start the backend server:
 
-   cd server
+   ```
+   cd backend
    npm start
+   ```
 
 2. In a new terminal, start the frontend development server:
 
+   ```
    cd frontend
    npm run dev
+   ```
 
-3. Open your browser and navigate to `http://localhost:5173` to view the vite application.
+3. Open your browser and navigate to `http://localhost:5173` to view the Vite application.
 
 ## Contributing
 
@@ -86,6 +107,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 If you have any questions or feedback, please contact:
 
-Sayak Bhattacharya - [Email: sayakofficial21@gmail.com or GitHub: [bsayak03](https://github.com/bsayak03)]
+Sayak Bhattacharya - Email: sayakofficial21@gmail.com or GitHub: [bsayak03](https://github.com/bsayak03)
 
 Project Link: [https://github.com/bsayak03/Jot-Down](https://github.com/bsayak03/Jot-Down)
