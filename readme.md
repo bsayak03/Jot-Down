@@ -19,9 +19,10 @@ Check out the live version of Jot Down: [https://jot-down-bsayak03.vercel.app/](
 
 [Add screenshots of your application here. For example:]
 
-<!-- ![Jot Down Homepage](path/to/homepage-screenshot.png) -->
-<!-- ![Jot Down Dashboard](path/to/dashboard-screenshot.png) -->
-<!-- ![Jot Down Note Creation](path/to/note-creation-screenshot.png) -->
+![Jot Down Homepage](screenshots/homepage.png)
+![Jot Down Login](screenshots/loginpage.png)
+![Jot Down Dashboard](screenshots/dashboardpage.png)
+![Jot Down Create New Note](screenshots/createnewnote.png)
 
 ## Demo Video
 
