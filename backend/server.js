@@ -22,7 +22,7 @@ app.use(express.json());
 //app.use(cors());
 
 mongoose
-  .connect(MONGODB_URL)
+  .connect(MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log(`Connected to DB`);
   })
