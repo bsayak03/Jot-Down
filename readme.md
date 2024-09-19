@@ -17,10 +17,13 @@ Check out the live version of Jot Down: [https://jot-down-bsayak03.vercel.app/](
 
 ## Screenshots
 
-**HomePage**
+**Home Page**
 ![Jot Down Homepage](screenshots/homepage.png)
+**Login Page**
 ![Jot Down Login](screenshots/loginpage.png)
+**Dashboard Page**
 ![Jot Down Dashboard](screenshots/dashboardpage.png)
+**Create New Note**
 ![Jot Down Create New Note](screenshots/createnewnote.png)
 
 ## Demo Video
