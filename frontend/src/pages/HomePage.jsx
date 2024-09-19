@@ -162,7 +162,9 @@ export default function Home() {
               <div className="bg-white rounded-full p-4 inline-block mb-4">
                 <Smartphone className="h-12 w-12 text-purple-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">1. Open the App</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                1. Open the Web App
+              </h3>
               <p className="text-gray-600">Access Jot Down on any device</p>
             </motion.div>
             <motion.div
