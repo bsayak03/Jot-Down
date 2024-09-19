@@ -237,13 +237,9 @@ export default function Home() {
           <div className="text-center mt-8">
             <p className="text-lg">© 2024 Jot Down. All rights reserved.</p>
             <p className="mt-2 text-lg">
-              Made with <span className="text-red-500">🤍</span> by Sayak
-              Bhattacharya
+              Made with <span className="text-red-500">🤍</span> by
+              <a href="https://github.com/bsayak03"> Sayak Bhattacharya</a>
             </p>
-
-            <a className="mt-2 text-lg" href="https://github.com/bsayak03">
-              GitHub
-            </a>
           </div>
         </div>
       </footer>
