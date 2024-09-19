@@ -22,7 +22,11 @@ app.use(express.json());
 //app.use(cors());
 
 mongoose
-  .connect(MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(MONGODB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 30000,
+  })
   .then(() => {
     console.log(`Connected to DB`);
   })
