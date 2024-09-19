@@ -26,12 +26,6 @@ Check out the live version of Jot Down: [https://jot-down-bsayak03.vercel.app/](
 **Create New Note**
 ![Jot Down Create New Note](screenshots/createnewnote.png)
 
-## Demo Video
-
-[Add a link to or embed a demo video of your application here. For example:]
-
-<!-- [![Jot Down Demo Video](path/to/video-thumbnail.png)](https://youtu.be/your-video-id) -->
-
 ## Technologies Used
 
 - **Frontend**: React.js with Vite
