@@ -57,17 +57,13 @@ Before you begin, ensure you have met the following requirements:
 
 1. Start the backend server:
 
-   ```
    cd server
    npm start
-   ```
 
 2. In a new terminal, start the frontend development server:
 
-   ```
    cd frontend
    npm run dev
-   ```
 
 3. Open your browser and navigate to `http://localhost:5173` to view the vite application.
 
