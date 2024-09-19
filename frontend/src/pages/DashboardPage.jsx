@@ -28,7 +28,7 @@ export default function Dashboard() {
     description: "",
   });
   const { user, loginWithRedirect, logout, isAuthenticated } = useAuth0();
-
+  const BACKEND_URL = import.meta.env.VITE_REACT_APP_BACKEND_BASEURL;
   useEffect(() => {
     if (isAuthenticated) {
       fetchNotes();
@@ -40,7 +40,7 @@ export default function Dashboard() {
   const fetchNotes = async () => {
     const userId = user.email.split("@")[0];
 
-    const res = await axios.get(`api/notes/${userId}`);
+    const res = await axios.get(`${BACKEND_URL}/notes/${userId}`);
 
     setNotes(res.data.notes);
     setFilteredNotes(res.data.notes);
@@ -57,7 +57,7 @@ export default function Dashboard() {
   const handleCreateNote = async (e) => {
     e.preventDefault();
     const userId = user.email.split("@")[0];
-    await axios.post(`api/note/${userId}`, {
+    await axios.post(`${BACKEND_URL}/note/${userId}`, {
       title,
       description,
     });
@@ -69,7 +69,7 @@ export default function Dashboard() {
 
   const handleUpdateNote = async (noteId) => {
     const userId = user.email.split("@")[0];
-    await axios.put(`api/note/${userId}/${noteId}`, {
+    await axios.put(`${BACKEND_URL}/note/${userId}/${noteId}`, {
       title: editableNote.title,
       description: editableNote.description,
     });
@@ -80,7 +80,7 @@ export default function Dashboard() {
 
   const handleDeleteNote = async (noteId) => {
     const userId = user.email.split("@")[0];
-    await axios.delete(`api/notes/${userId}/${noteId}`);
+    await axios.delete(`${BACKEND_URL}/notes/${userId}/${noteId}`);
     fetchNotes();
   };
 
